@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-WebViewPlugin",
+  "name": "cordova-plugin-hand-webview",
   "version": "1.0.1",
   "description": "open the H5 page",
   "cordova": {
-    "id": "cordova-plugin-WebViewPlugin",
+    "id": "cordova-plugin-hand-webview",
     "platforms": [
       "android",
       "ios"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/liuzong/cordova-plugin-WebViewPlugin.git"
+    "url": "https://github.com/liuzong/cordova-plugin-hand-webview.git"
   },
   "keywords": [
     "cordova",
