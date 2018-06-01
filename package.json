@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-WebViewPlugin",
+  "version": "1.0.1",
+  "description": "open the H5 page",
+  "cordova": {
+    "id": "cordova-plugin-WebViewPlugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuzong/cordova-plugin-WebViewPlugin.git"
+  },
+  "keywords": [
+    "cordova",
+    "avtive",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "hand.plugin",
+  "license": "Apache 2.0"
+}

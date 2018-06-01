@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-WebViewPlugin" version="1.0.1">
+    <name>WebViewPlugin</name>
+    <author>wei xiao</author>
+    <description>hand plugin.</description>
+    <keywords>cordova,avtive</keywords>
+    <license>Apache 2.0</license>
+    
+    <js-module charset="utf-8" name="WebViewPlugin" src="www/WebViewPlugin.js">
+        <clobbers target="WebViewPlugin"/>
+    </js-module>
+    
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="WebViewPlugin">
+                <param name="android-package" value="com.hand.webview.WebViewPlugin"/>
+            </feature>
+        </config-file>
+		<source-file src="src/android/src/com/hand/webview/Util.java" target-dir="src/com/hand/webview"/>
+		<source-file src="src/android/src/com/hand/webview/WebViewActivity.java" target-dir="src/com/hand/webview"/>
+		<source-file src="src/android/src/com/hand/webview/WebViewActivityManager.java" target-dir="src/com/hand/webview"/>
+		<source-file src="src/android/src/com/hand/webview/WebViewPlugin.java" target-dir="src/com/hand/webview"/>
+        <source-file src="src/android/src/com/hand/webview/DialogLoad.java" target-dir="src/com/hand/webview"/>
+		<source-file src="src/android/layout/activity_webview.xml" target-dir="res/layout"/>
+        <source-file src="src/android/drawable/anim_loading.xml" target-dir="res/drawable"/>
+        <source-file src="src/android/layout/dialog_loading.xml" target-dir="res/layout"/>
+        <source-file src="src/android/values/web_style.xml" target-dir="res/values"/>
+        <source-file src="src/android/drawable-hdpi/load0.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load1.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load2.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load3.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load4.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load5.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load6.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load7.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load8.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load9.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load10.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load11.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load12.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load13.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load14.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/drawable-hdpi/load15.png" target-dir="res/drawable-hdpi"/>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<activity android:screenOrientation="portrait" android:name="com.hand.webview.WebViewActivity"></activity>
+		</config-file>
+		<config-file parent="/manifest" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.INTERNET" />
+		</config-file>
+        
+    </platform>
+    
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="WebViewPlugin">
+                <param name="ios-package" value="CDVWebViewPlugin"/>
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/plugins/CDVWebViewPlugin.h" />
+        <source-file src="src/ios/plugins/CDVWebViewPlugin.m" />
+        <header-file src="src/ios/plugins/WebPluginController.h" />
+        <source-file src="src/ios/plugins/WebPluginController.m" />
+        <header-file src="src/ios/plugins/MBProgressHUD.h" />
+        <source-file src="src/ios/plugins/MBProgressHUD.m" />
+        <header-file src="src/ios/plugins/MBProgressHUD+XW.h" />
+        <source-file src="src/ios/plugins/MBProgressHUD+XW.m" />
+        <resource-file src="src/ios/plugins/loadimage/hly_0@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_1@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_2@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_3@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_4@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_5@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_6@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_7@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_8@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_9@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_10@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_11@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_12@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_13@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_14@2x.png" />
+        <resource-file src="src/ios/plugins/loadimage/hly_15@2x.png" />
+        
+    </platform>
+</plugin>
