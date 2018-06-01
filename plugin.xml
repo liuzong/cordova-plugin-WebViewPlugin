@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-hand-webview" version="1.0.1">
     <name>WebViewPlugin</name>
-    <author>wei xiao</author>
+    <author>hand</author>
     <description>hand plugin.</description>
     <keywords>cordova,avtive</keywords>
     <license>Apache 2.0</license>

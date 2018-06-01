@@ -15,11 +15,9 @@
   },
   "keywords": [
     "cordova",
-    "avtive",
-    "ecosystem:cordova",
-    "cordova-android",
-    "cordova-ios"
+    "cordova-webview",
+    "webview"
   ],
-  "author": "hand.plugin",
+  "author": "hand plugin",
   "license": "Apache 2.0"
 }
