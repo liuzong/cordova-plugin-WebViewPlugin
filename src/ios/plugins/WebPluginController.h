@@ -20,4 +20,5 @@
 
 @property (nonatomic ,copy) NSString *fileUrl;
 @property (nonatomic, weak) id<WebPluginProtocol> delegate;
+@property (nonatomic, strong) id <CDVCommandDelegate> openDelegate;
 @end
