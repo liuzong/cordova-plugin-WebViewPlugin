@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-hand-webview",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "open the H5 page",
   "cordova": {
     "id": "cordova-plugin-hand-webview",
