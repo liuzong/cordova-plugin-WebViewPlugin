@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="cordova-plugin-hand-webview" version="1.0.2">
+    id="cordova-plugin-hand-webview" version="1.0.3">
     <name>WebViewPlugin</name>
     <author>hand</author>
     <description>hand plugin.</description>
